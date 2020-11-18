@@ -1,0 +1,26 @@
+Acc: {
+  Type: 13
+  Url: "https://s3-ap-southeast-1.amazonaws.com/india-res/news/invitation.html"
+  Content: "Invite your friends to receive massive number of coins!"
+  ActivityStartTime: 1495077209
+  ActivityEndTime: 1499177184
+  Label: 1
+  Title: "血战公告测试1"
+  ChannelID: 102
+  ChannelID: 101
+  ChannelID: 100
+  ChannelID: 0
+}
+Acc: {
+  Type: 13
+  Url: "https://s3-ap-southeast-1.amazonaws.com/india-res/news/invitation.html"
+  Content: "看到动画没"
+  ActivityStartTime: 1495077209
+  ActivityEndTime: 1499177184
+  Label: 1
+  Title: "血战公告测试2"
+  ChannelID: 102
+  ChannelID: 101
+  ChannelID: 100
+  ChannelID: 0
+}

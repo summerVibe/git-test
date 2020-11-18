@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?><wsdl:definitions name="IPoliceExtWebPlateServiceService" targetNamespace="http://service.police.yinhai.com/" xmlns:ns1="http://cxf.apache.org/bindings/xformat" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://service.police.yinhai.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+<xs:schema elementFormDefault="unqualified" targetNamespace="http://service.police.yinhai.com/" version="1.0" xmlns:tns="http://service.police.yinhai.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="callPoliceService" type="tns:callPoliceService"></xs:element>
+<xs:element name="callPoliceServiceResponse" type="tns:callPoliceServiceResponse"></xs:element>
+<xs:complexType name="callPoliceService">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="paramXml" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+<xs:complexType name="callPoliceServiceResponse">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="return" type="xs:string"></xs:element>
+    </xs:sequence>
+  </xs:complexType>
+</xs:schema>
+  </wsdl:types>
+  <wsdl:message name="callPoliceService">
+    <wsdl:part element="tns:callPoliceService" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="callPoliceServiceResponse">
+    <wsdl:part element="tns:callPoliceServiceResponse" name="parameters">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="IPoliceExtWebPlateService">
+    <wsdl:operation name="callPoliceService">
+      <wsdl:input message="tns:callPoliceService" name="callPoliceService">
+    </wsdl:input>
+      <wsdl:output message="tns:callPoliceServiceResponse" name="callPoliceServiceResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="IPoliceExtWebPlateServiceServiceSoapBinding" type="tns:IPoliceExtWebPlateService">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"></soap:binding>
+    <wsdl:operation name="callPoliceService">
+      <soap:operation soapAction="" style="document"></soap:operation>
+      <wsdl:input name="callPoliceService">
+        <soap:body use="literal"></soap:body>
+      </wsdl:input>
+      <wsdl:output name="callPoliceServiceResponse">
+        <soap:body use="literal"></soap:body>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="IPoliceExtWebPlateServiceService">
+    <wsdl:port binding="tns:IPoliceExtWebPlateServiceServiceSoapBinding" name="IPoliceExtWebPlateServicePort">
+      <soap:address location="http://10.182.200.80:7001/citizeMailWebPlate/Service/IMailWebPlateService"></soap:address>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

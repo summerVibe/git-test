@@ -1,0 +1,11 @@
+<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
+	<env:Header/>
+	<env:Body>
+		<OutputParameters xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.oracle.com/apps/cux/soaprovider/plsql/cux_po_logistics_pkg/get_inv_quantity/">
+			<X_REQUEST_CODE xsi:nil="true"/>
+			<X_RETURN_STATUS>S</X_RETURN_STATUS>
+			<X_RETURN_MSG xsi:nil="true"/>
+			<X_QTY>137</X_QTY>
+		</OutputParameters>
+	</env:Body>
+</env:Envelope>
