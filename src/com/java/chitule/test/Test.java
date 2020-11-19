@@ -106,6 +106,7 @@ public class Test {
         return sformat2.format(date);
     }
 
+
     public static String getWorkTypeName(String workType){
         String workTypeName = "-";
         if("1".equals(workType)){
