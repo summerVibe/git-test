@@ -16,7 +16,7 @@ import org.apache.http.util.EntityUtils;
 import java.io.*;
 import java.util.List;
 
-// 大丰收
+// 大丰收 - 收割机
 public class Test3 {
 
 
@@ -36,7 +36,7 @@ public class Test3 {
             //设置请求和传输超时时间
             RequestConfig requestConfig = RequestConfig.custom().setSocketTimeout(5000).setConnectTimeout(5000).build();
             httpget.setConfig(requestConfig);
-            httpget.setHeader("token","WzpbLbco0IWNW26ZSSh6YO3PJH2a-LxsWTEbke843GpYkmcGHXTFPZu0m6FL4uCi1lUEj5ah-MK1bfZLfODC2dtwXWozsx2XRgfOECjhkFT5y7ndzBA=");
+            httpget.setHeader("token","2E7nr5WQuvH5SG71C2qDtXHSYncdzucMuZ6NYpOuqT2AIFuYmbg71GXsnethOtFoZoTLnsBR96IpuROnRkESTYLT6a7tKBFgBBwRp8Z5n61Be6WEwC4=");
             httpget.setHeader("app_version","1.9.1");
             // 执行get请求.
             CloseableHttpResponse response = httpclient.execute(httpget);

@@ -12,6 +12,10 @@ import java.net.URL;
 import java.util.List;
 import java.util.Map;
 
+
+/**
+ * 农机手
+ */
 public class Test1 {
 
     public static String post(String urlStr, Map<String, String> parameterMap) throws IOException{
@@ -58,7 +62,6 @@ public class Test1 {
         msp.put("pageNo",pageNo);
         msp.put("pageSize","1000");
         msp.put("roleCode","62");
-        msp.put("pageNo",pageNo);
         String s = post(url,msp);
         JSONObject jsonObject = JSON.parseObject(s);
         JSONArray list = jsonObject.getJSONArray("root");

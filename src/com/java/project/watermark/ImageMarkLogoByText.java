@@ -25,7 +25,7 @@ public class ImageMarkLogoByText {
      * @param args
      */
     public static void main(String[] args) {
-        String srcImgPath = "C:\\Users\\jack\\Desktop\\card5.jpg";
+        String srcImgPath = "C:\\Users\\jack\\Desktop\\card1.jpg";
         String logoText = "用于恒邦双林汇身份信息验证";
         String targerPath = "C:\\Users\\jack\\Desktop\\card1_text.jpg";
 

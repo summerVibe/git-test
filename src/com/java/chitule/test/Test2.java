@@ -12,6 +12,9 @@ import java.net.URL;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * 农活
+ */
 public class Test2 {
 
     public static String post(String urlStr, Map<String, String> parameterMap) throws IOException{
@@ -81,7 +84,7 @@ public class Test2 {
 
     @org.junit.Test
     public void test1()throws Exception{
-        for (int i = 5;i <= 8;i++){
+        for (int i = 1;i <= 4;i++){
             System.out.println("第"+i+"页");
             queryJSList(i+"");
         }
